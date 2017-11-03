@@ -1,2 +1,3 @@
 # systems09
-Please follow the DIRections
+* USAGE: ./ls_test <PATH> 
+* Running 'make run' will default <PATH> to '.' 
