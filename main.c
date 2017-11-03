@@ -78,7 +78,7 @@ int main(int argc, char ** argv){
 	//printf("\n%lu\n", size_regular("."));
 
 
-	printf("\n\n\nUSAGE: ./ls_test <PATH>\n\nRunning 'make run' will default <PATH> to '.'\n\n\n");
+	printf("\n\n\n*** USAGE: ./ls_test <PATH> ***\n\n*** Running 'make run' will default <PATH> to '.' ***\n\n\n");
 	if(!argv[1]){
 		exit(1);
 	}
