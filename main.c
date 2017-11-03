@@ -62,7 +62,7 @@ void scan_dir(char * path){
 	list_type(path, DT_REG);	
 }
 
-int main(){
+int main(int argc, char ** argv){
 	/*
 	 * char * a = fullpath("/home/daniel/Documents/", "stuff");
 	 * char * b = fullpath("/home/daniel/Documents", "stuff");
@@ -76,5 +76,11 @@ int main(){
 	//list_type("/home/daniel/Documents/", DT_REG);	
 	//list_type(".", DT_DIR);
 	//printf("\n%lu\n", size_regular("."));
-	scan_dir(".");
+
+
+	printf("\n\n\nUSAGE: ./ls_test <PATH>\n\nRunning 'make run' will default <PATH> to '.'\n\n\n");
+	if(!argv[1]){
+		exit(1);
+	}
+	scan_dir(argv[1]);
 }
